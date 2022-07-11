@@ -10,7 +10,7 @@ eureka:
   client:
     register-with-eureka: true  #註冊到Eureka註冊中心
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka
+      defaultZone: http://peer1:1111/eureka
 
 management:
   endpoints:
