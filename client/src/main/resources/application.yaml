@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          users-client-oidc:
+            provider: spring
+            client-id: client1
+            client-secret: client1_password
+            authorization-grant-type: authorization_code
+            scope: openid
+        provider:
+          spring:
+            issuer-uri: http://localhost:8000
